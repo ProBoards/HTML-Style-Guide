@@ -176,7 +176,7 @@ Strictly keep structure (markup), presentation (styling), and behavior (scriptin
 
 ### Entity References
 
-Do not use entity references.  There is no need to use entity references like &mdash;, &rdquo;, or &#x263a;, assuming the same encoding (UTF-8) is used for files and editors as well as among teams.  The only exceptions apply to characters with special meaning in HTML (like < and &) as well as control or “invisible” characters (like no-break spaces).
+Do not use entity references.  There is no need to use entity references like `&mdash;`, `&rdquo;`, or `&#x263a;`, assuming the same encoding (UTF-8) is used for files and editors as well as among teams.  The only exceptions apply to characters with special meaning in HTML (like < and &) as well as control or “invisible” characters (like no-break spaces).
 
 ```html
 <!-- Not recommended -->
