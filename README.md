@@ -1,7 +1,7 @@
 # HTML Style Guide
 The ProBoards Official HTML Style Guide
 
-The purpose of this document is to provide guidelines for writing HTML. Code conventions are important for the long-term maintainability of code. Most of the time, developers are maintaining code, either their own or someone else's. The goal is to have everyone’s code look the same, which allows any developer to easily work on another developer’s code.
+The purpose of this document is to provide guidelines for writing HTML. Code conventions are important for the long-term maintainability of code. Most of the time, developers are maintaining code, either their own or someone else'’'s. The goal is to have everyone's code look the same, which allows any developer to easily work on another developer’s code.
 
 We've used the following resources as a base from which to build:
 - [Google's HTML Guide](https://google.github.io/styleguide/htmlcssguide.xml)
@@ -36,8 +36,8 @@ Each indentation level is made up of four spaces. Do not use tabs. (Please set y
 
 <!-- bad -->
 <ul>
-	<li>Fantastic
-	<li>Great
+<li>Fantastic
+<li>Great
 </ul>
 
 <!-- good -->
@@ -91,9 +91,9 @@ Use a new line for every block, list, or table element, and indent every such ch
 </blockquote>
 
 <ul>
-    <li>Moe
-    <li>Larry
-    <li>Curly
+    <li>Moe</li>
+    <li>Larry</li>
+    <li>Curly</li>
 </ul>
 ```
 
@@ -238,7 +238,7 @@ Omit the protocol portion (http:, https:) from URLs pointing to images and other
 <script src="//www.google.com/js/gweb/analytics/autotrack.js"></script>
 ```
 
-#### Attributes (spaces and equals signs/html quotation marks/no value for boolean attrs)
+#### Attributes
 
 Omitting spaces around equal signs makes attributes easier to read and groups entities together better.  When quoting attributes values, use double quotation marks ("") rather than single quotation marks ('') around attribute values.  Many attributes don’t require a value to be set, like disabled or checked, so don’t set them.  For more information, read the [WhatWG section](http://www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html#boolean-attributes).
 
@@ -349,7 +349,7 @@ Every page should properly utilize appropriate header tags (`h1` to `h6`) to des
 
 #### Tables
 
-Make use of <thead>, <tfoot>, <tbody>, and <th> tags (and scope attribute) when appropriate. Note that <tfoot> goes above <tbody> for speed reasons. You want the browser to load the footer before a table full of data.  **Never use a table for layout purposes**.
+Make use of `thead`, `tfoot`, `tbody`, and `th` tags (and scope attribute) when appropriate. Note that `tfoot` goes above `tbody` for speed reasons. You want the browser to load the footer before a table full of data.  **Never use a table for layout purposes**.
 
 ```html
 <table summary="This is a chart of invoices for 2011.">
@@ -374,9 +374,9 @@ Make use of <thead>, <tfoot>, <tbody>, and <th> tags (and scope attribute) when 
 </table>
 ```
 
-#### Form Inputs (every form input with text should use label)
+#### Form Inputs
 
-Wrap inputs and their text in `<label>`s. No need for `for` attributes here, the wrapping automatically associates the two.
+Wrap inputs and their text in `label`s. No need for `for` attributes here, the wrapping automatically associates the two.
 
 ```html
 <!-- bad -->
@@ -389,9 +389,9 @@ Wrap inputs and their text in `<label>`s. No need for `for` attributes here, the
 </label>
 ```
 
-#### Form Buttons (form buttons should have explicit types/primary form button should come first)
+#### Form Buttons
 
-Form buttons should always include an explicit type. Use primary buttons for the type="submit" button and regular buttons for type="button".  The primary form button must come first in the DOM, especially for forms with multiple submit buttons. The visual order should be preserved with float: right; on each button.
+Form buttons should always include an explicit type. Use primary buttons for the `type="submit"` button and regular buttons for `type="button"`.  The primary form button must come first in the DOM, especially for forms with multiple submit buttons. The visual order should be preserved with float: right; on each button.
 
 ```html
 <!-- bad -->
@@ -448,7 +448,7 @@ The currency symbol for the Euro is “€”.
 
 #### Multimedia Fallbacks
 
-For multimedia, such as images, videos, and animated objects via canvas, make sure to offer alternative access. For images that means use meaningful alternative text (alt) and for video and audio transcripts and captions, if available.  Providing alternative contents is important for accessibility reasons: A blind user has few cues to tell what an image is about without @alt, and other users may have no way of understanding what video or audio contents are about either.  For images whose alt attributes would introduce redundancy, and for images whose purpose is purely decorative which you cannot immediately use CSS for, use no alternative text, as in alt="".
+For multimedia, such as images, videos, and animated objects via canvas, make sure to offer alternative access. For images that means use meaningful alternative text (alt) and for video and audio transcripts and captions, if available.  Providing alternative contents is important for accessibility reasons: A blind user has few cues to tell what an image is about without @alt, and other users may have no way of understanding what video or audio contents are about either.  For images whose alt attributes would introduce redundancy, and for images whose purpose is purely decorative which you cannot immediately use CSS for, use no alternative text, as in `alt=""`.
 
 ```html
 <!-- bad -->
