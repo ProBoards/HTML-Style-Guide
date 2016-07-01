@@ -25,6 +25,7 @@ We've used the following resources as a base from which to build:
   11. [Avoid Superfluous Parent Elements](#avoid-superfluous-parent-elements)
   12. [Comments](#comments)
   13. [Todos](#todos)
+  14. [Void Elements](#void-elements)
   14. [Resource Protocols](#resource-protocols)
   15. [Attributes](#attributes)
 16. Head
