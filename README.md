@@ -68,20 +68,20 @@ Each indentation level is made up of four spaces. Do not use tabs. (Please set y
 ```html
 <!-- bad -->
 <ul>
-  <li>Fantastic
-  <li>Great
+  <li>one</li>
+  <li>two</li>
 </ul>
 
 <!-- bad -->
 <ul>
-<li>Fantastic
-<li>Great
+<li>one</li>
+<li>two</li>
 </ul>
 
 <!-- good -->
 <ul>
-    <li>Fantastic
-    <li>Great
+    <li>one</li>
+    <li>two</li>
 </ul>
 ```
 
@@ -120,10 +120,25 @@ Remove unecessary whitespace, both in the form of trailing whitespace characters
 
 #### Indentation
 
-Use a new line for every block, list, or table element, and indent every such child element.  If you run into issues around whitespace between list items it’s acceptable to put all `li` elements in one line.
+Child elements should be placed on a new line and properly indented.  The only exceptions to this are inline tags and tags whose text contents are less than a single line in length.  If you run into issues around whitespace between list items it’s acceptable to put all `li` elements in one line.  Closing tags should be at the same indentation level as their matching opening tag.
 
 ```html
-<!-- TODO: expand examples here -->
+<!-- bad -->
+<div><div>Test <span>Test</span> Test</div></div>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+
+<!-- good -->
+<div>
+    <div>
+        Test <span>Test</span> Test
+    </div>
+</div>
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p><br>
+
 <blockquote>
     <p><em>Space</em>, the final frontier.</p>
 </blockquote>
@@ -261,6 +276,18 @@ Mark todos and action items with a TODO.  Highlight todos by using the keyword T
     <li>Apples</li>
     <li>Oranges</li>
 </ul>
+```
+
+### Void Elements
+
+Although fine with HTML, do not close void elements.  The current list of void elements is defined in the [HTML5 specification](https://www.w3.org/TR/html-markup/syntax.html#void-element)
+
+```html
+<!-- bad -->
+<br />
+
+<!-- good -->
+<br>
 ```
 
 #### Resource Protocols
