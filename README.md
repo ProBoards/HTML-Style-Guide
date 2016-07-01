@@ -9,6 +9,44 @@ We've used the following resources as a base from which to build:
 - [Primer Guidelines](http://primercss.io/guidelines)
 - [w3schools HTML5 Style Guide and Coding Conventions](http://www.w3schools.com/html/html5_syntax.asp)
 
+## Table of Contents
+1. Formatting
+  2. [Capitalization](#capitalization)
+  2. [Spaces or Tabs?](#spaces-or-tabs)
+  3. [Line Endings](#line-endings)
+  4. [Whitespace](#whitespace)
+  5. [Indentation](#indentation)
+6. General
+  6. [HTML Validity](#html-validity)
+  7. [Separation of Concerns](#separation-of-concerns)
+  8. [JavaScript Generated Markup](#javascript-generated-markup)
+  9. [Semantics](#semantics)
+  10. [Optional Tags (Optional)](#optional-tags)
+  11. [Avoid Superfluous Parent Elements](#avoid-superfluous-parent-elements)
+  12. [Comments](#comments)
+  13. [Todos](#todos)
+  14. [Resource Protocols](#resource-protocols)
+  15. [Attributes](#attributes)
+16. Head
+  16. [Document Type](#document-type)
+  17. [Language Attribute](#language-attribute)
+  18. [Document Encoding](#document-encoding)
+  19. [Viewport Scaling](#viewport-scaling)
+  20. [Title Tag](#title-tag)
+  21. [Meta Description](#meta-description)
+  22. [Other Meta Tags](#other-meta-tags)
+  23. [`type` Attributes](#type-attributes)
+24. Body
+  24. [Header Tags](#header-tags)
+  25. [Tables](#tables)
+  26. [Form Inputs](#form-inputs)
+  27. [Form Buttons](#form-buttons)
+  28. [`br` Tags](#br-tags)
+  29. [List Elements](#list-elements)
+  30. [Entity References](#entity-references)
+  31. [Multimedia Fallbacks](#multimedia-fallbacks)
+
+
 ## Formatting
 
 #### Capitalization
@@ -47,7 +85,7 @@ Each indentation level is made up of four spaces. Do not use tabs. (Please set y
 </ul>
 ```
 
-#### Linebreaks
+#### Line Endings
 
 Use Unix-style line endings ('\n') rather than Windows-style ('\r\n').
 
