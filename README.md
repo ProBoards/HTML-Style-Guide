@@ -21,7 +21,6 @@ We've used the following resources as a base from which to build:
   7. [Separation of Concerns](#separation-of-concerns)
   8. [JavaScript Generated Markup](#javascript-generated-markup)
   9. [Semantics](#semantics)
-  10. [Optional Tags (Optional)](#optional-tags)
   11. [Avoid Superfluous Parent Elements](#avoid-superfluous-parent-elements)
   12. [Comments](#comments)
   13. [Todos](#todos)
@@ -207,28 +206,6 @@ Use HTML elements according to their intended purpose.  For example, use heading
 
 <!-- good -->
 <a href="recommendations/">All recommendations</a>
-```
-
-#### Optional Tags (Optional)
-
-Omit optional tags.  For file size optimization and scannability purposes, consider omitting optional tags. The [HTML5 specification](https://whatwg.org/specs/web-apps/current-work/multipage/syntax.html#syntax-tag-omission) defines what tags can be omitted.  *This approach may require a grace period to be established as a wider guideline as it’s significantly different from what web developers are typically taught. For consistency and simplicity reasons it’s best served omitting all optional tags, not just a selection.*
-
-```html
-<!-- bad -->
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Spending money, spending bytes</title>
-  </head>
-  <body>
-    <p>Sic.</p>
-  </body>
-</html>
-
-<!-- good -->
-<!DOCTYPE html>
-<title>Saving money, saving bytes</title>
-<p>Qed.
 ```
 
 #### Avoid Superfluous Parent Elements
